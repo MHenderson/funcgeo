@@ -1,0 +1,14 @@
+Package: funcgeo
+Type: Package
+Title: Functional Geometry with grid graphics.
+Version: 0.1.0
+Author: Matthew Henderson <matthew.james.henderson@gmail.com>
+Maintainer: Matthew Henderson <matthew.james.henderson@gmail.com>
+Description: An implementation of Peter Henderson's Functional Geometry in R
+    using grid graphics.
+License: MIT
+LazyData: TRUE
+Imports:
+    grid,
+    gridExtra
+RoxygenNote: 5.0.1
