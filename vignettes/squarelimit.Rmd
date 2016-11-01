@@ -1,0 +1,59 @@
+---
+title: "Square Limit"
+author: "Matthew Henderson"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Square Limit}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+library(funcgeo)
+library(grid)
+
+f <- linesGrob(
+  x = c(.1, .9, .9, .2, .2, .6, .6, .2, .2, .1, .1),
+  y = c(.9, .9, .8, .8, .6, .6, .5, .5, .1, .1, .9),
+  vp = viewport(width = 1, height = 1)
+)
+```
+
+## Figure 1
+
+```{r}
+grid.draw(f)
+```
+
+```{r}
+grid.draw(rot(f))
+```
+
+```{r}
+grid.draw(flip(f))
+```
+
+```{r}
+grid.draw(rot(flip(f)))
+```
+
+## Figure 2
+
+```{r}
+grid.draw(above(f, f))
+```
+
+```{r}
+grid.draw(beside(f, f))
+```
+
+```{r}
+grid.draw(above(beside(f, f), f))
+```
+
+```{r}
+grid.draw(rot(f, angle = 45))
+```
+
+footnotes^[P. Henderson "Functional Geometry"]
