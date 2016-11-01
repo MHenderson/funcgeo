@@ -2,11 +2,17 @@
 % Please edit documentation in R/flip.R
 \name{flip}
 \alias{flip}
-\title{flip}
+\title{Flip}
 \usage{
 flip(g)
 }
+\arguments{
+\item{g}{grob}
+}
+\value{
+A grob
+}
 \description{
-flip
+Flip
 }
 

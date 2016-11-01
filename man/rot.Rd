@@ -2,11 +2,17 @@
 % Please edit documentation in R/rot.R
 \name{rot}
 \alias{rot}
-\title{rot}
+\title{Rotate}
 \usage{
 rot(g)
 }
+\arguments{
+\item{g}{grob}
+}
+\value{
+A grob
+}
 \description{
-rot
+Rotate
 }
 
