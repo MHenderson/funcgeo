@@ -1,5 +1,5 @@
 ---
-title: "Square Limit"
+title: "Functional Geometry"
 author: "Matthew Henderson"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -9,20 +9,12 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+## Figure 1
+
 ```{r}
 library(funcgeo)
 library(grid)
 
-f <- linesGrob(
-  x = c(.1, .9, .9, .2, .2, .6, .6, .2, .2, .1, .1),
-  y = c(.9, .9, .8, .8, .6, .6, .5, .5, .1, .1, .9),
-  vp = viewport(width = 1, height = 1)
-)
-```
-
-## Figure 1
-
-```{r}
 grid.draw(f)
 ```
 
@@ -54,6 +46,34 @@ grid.draw(above(beside(f, f), f))
 
 ```{r}
 grid.draw(rot(f, angle = 45))
+```
+
+## Man
+
+http://www.frank-buss.de/lisp/functional.html
+
+```{r}
+grid.draw(man)
+```
+
+```{r}
+grid.draw(beside(man, man))
+```
+
+```{r}
+grid.draw(above(man, man))
+```
+
+```{r}
+grid.draw(rot(man))
+```
+
+```{r}
+grid.draw(quartet(man, man, man, man))
+```
+
+```{r}
+grid.draw(cycle(man, man, man, man))
 ```
 
 footnotes^[P. Henderson "Functional Geometry"]
