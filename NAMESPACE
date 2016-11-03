@@ -2,5 +2,8 @@
 
 export(above)
 export(beside)
+export(cycle)
 export(flip)
+export(over)
+export(quartet)
 export(rot)
