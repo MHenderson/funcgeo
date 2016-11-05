@@ -1,0 +1,61 @@
+---
+title: "Functional Geometry (1982)"
+author: "Matthew Henderson"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Square Limit}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Man
+
+* http://users.ecs.soton.ac.uk/peter/funcgeo.pdf
+* http://www.frank-buss.de/lisp/functional.html
+
+```{r setup, include = FALSE, cache = FALSE, include = FALSE}
+library(knitr)
+opts_chunk$set(fig.width = 3, fig.height = 3)
+```
+
+```{r, message = FALSE, fig.cap = "Figure 1"}
+library(funcgeo)
+library(grid)
+
+grid.draw(man)
+```
+
+```{r, fig.cap = "Figure 7"}
+grid.draw(beside(man, man))
+```
+
+```{r}
+grid.draw(above(man, man))
+```
+
+```{r, fig.cap = "Figure 15"}
+grid.draw(rot(man))
+```
+
+```{r}
+grid.draw(quartet(man, man, man, man))
+```
+
+```{r}
+grid.draw(cycle(man))
+```
+
+```{r, fig.cap = "Figure 18"}
+grid.draw(fish_p)
+```
+
+```{r, fig.cap = "Figure 19"}
+grid.draw(fish_q)
+```
+
+```{r, fig.cap = "Figure 23"}
+grid.draw(cycle(rot(fish_q)))
+```
+
+footnotes^[P. Henderson "Functional Geometry"]

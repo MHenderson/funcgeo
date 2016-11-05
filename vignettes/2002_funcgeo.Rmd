@@ -1,5 +1,5 @@
 ---
-title: "Functional Geometry"
+title: "Functional Geometry (2002)"
 author: "Matthew Henderson"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -8,6 +8,8 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+http://eprints.soton.ac.uk/257577/1/funcgeo2.pdf
 
 ## Figure 1
 
@@ -47,33 +49,3 @@ grid.draw(above(beside(f, f), f))
 ```{r}
 grid.draw(rot(f, angle = 45))
 ```
-
-## Man
-
-http://www.frank-buss.de/lisp/functional.html
-
-```{r}
-grid.draw(man)
-```
-
-```{r}
-grid.draw(beside(man, man))
-```
-
-```{r}
-grid.draw(above(man, man))
-```
-
-```{r}
-grid.draw(rot(man))
-```
-
-```{r}
-grid.draw(quartet(man, man, man, man))
-```
-
-```{r}
-grid.draw(cycle(man, man, man, man))
-```
-
-footnotes^[P. Henderson "Functional Geometry"]
