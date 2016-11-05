@@ -3,6 +3,6 @@
 #' @param g grob
 #' @return A grob
 #' @export
-cycle <- function(p, q, r, s) {
-  return(quartet(p, rot(rot(rot(q))), rot(r), rot(rot(s))))
+cycle <- function(p) {
+  return(quartet(p, rot(rot(rot(p))), rot(p), rot(rot(p))))
 }
