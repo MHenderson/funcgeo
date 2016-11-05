@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 ^docs$
 ^CONDUCT\.md$
+^README\.Rmd$
+^README-.*\.png$
