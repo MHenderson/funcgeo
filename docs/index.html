@@ -3,7 +3,7 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]--></head><body>
-    <div class="container template-home">
+    <div class="container template-vignette">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -36,33 +36,46 @@
 
       
       </header><div class="row">
-  <div class="contents col-md-9">
-    <div id="funcgeo" class="section level1">
+  <div class="col-md-9">
+    
+
+    
+    
+<div class="contents">
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+<div id="funcgeo" class="section level1">
 <div class="page-header"><h1 class="hasAnchor"><a href="#funcgeo" class="anchor"> </a>funcgeo</h1></div>
-<p>The goal of funcgeo is to</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"> </a>Installation</h2>
-<p>You can install funcgeo from github with:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("devtools")</span>
-devtools::<span class="kw">install_github</span>(<span class="st">"funcgeo/MHenderson"</span>)</code></pre></div>
+<p>The goal of funcgeo is to reproduce the pictures in the following papers:</p>
+<ul><li><a href="http://users.ecs.soton.ac.uk/peter/funcgeo.pdf" class="uri">http://users.ecs.soton.ac.uk/peter/funcgeo.pdf</a></li>
+<li><a href="http://eprints.soton.ac.uk/257577/1/funcgeo2.pdf" class="uri">http://eprints.soton.ac.uk/257577/1/funcgeo2.pdf</a></li>
+</ul><div id="installation" class="section level2">
+<h2 class="hasAnchor"><a href="#installation" class="anchor"> </a>Installation</h2>
+<p>You can install funcgeo from my Drat repository on Github:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("drat")</span>
+drat::<span class="kw">addRepo</span>(<span class="st">"MHenderson"</span>)
+<span class="kw">install.packages</span>(<span class="st">"funcgeo"</span>)</code></pre></div>
 </div>
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"> </a>Example</h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">1</span> +<span class="st"> </span><span class="dv">2</span> =<span class="st"> </span><span class="dv">3</span></code></pre></div>
+<div id="examples" class="section level2">
+<h2 class="hasAnchor"><a href="#examples" class="anchor"> </a>Examples</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(funcgeo)
+<span class="kw">library</span>(grid)
+
+<span class="kw">grid.draw</span>(<span class="kw"><a href="reference/cycle.html">cycle</a></span>(<span class="kw"><a href="reference/rot.html">rot</a></span>(fish_q)))</code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="288"></p>
+<p>Please note that this project is released with a <a href="CONDUCT.md">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
+</div>
 </div>
 </div>
   </div>
 
-  <div class="col-md-3" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Links</h2><ul class="list-unstyled"><li>Browse source code at <br><a href="https://%E2%80%8Bgithub.com/%E2%80%8Bmhenderson/%E2%80%8Bfuncgeo">https://&#8203;github.com/&#8203;mhenderson/&#8203;funcgeo</a></li>
 <li>Report a bug at <br><a href="https://%E2%80%8Bgithub.com/%E2%80%8Bmhenderson/%E2%80%8Bfuncgeo/%E2%80%8Bissues">https://&#8203;github.com/&#8203;mhenderson/&#8203;funcgeo/&#8203;issues</a></li>
 </ul><h2>License</h2>
 <p><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE">LICENSE</a></p>
 <h2>Developers</h2><ul class="list-unstyled"><li>Matthew Henderson <br><small class="roles"> Author, maintainer </small> </li>
 </ul></div>
+
 </div>
 
 
