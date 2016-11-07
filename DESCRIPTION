@@ -1,6 +1,6 @@
 Package: funcgeo
 Type: Package
-Title: Functional Geometry with grid graphics
+Title: Functional Geometry in R
 Version: 0.1.0
 Authors@R: person("Matthew", "Henderson", email = "matthew.james.henderson@gmail.com",
                   role = c("aut", "cre"))
@@ -14,7 +14,8 @@ Imports:
 RoxygenNote: 5.0.1
 Suggests: testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 VignetteBuilder: knitr
 URL: https://github.com/mhenderson/funcgeo
-BugReports:  https://github.com/mhenderson/funcgeo/issues
+BugReports: https://github.com/mhenderson/funcgeo/issues
