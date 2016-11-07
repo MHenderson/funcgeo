@@ -16,46 +16,51 @@ vignette: >
 
 ```{r setup, include = FALSE, cache = FALSE, include = FALSE}
 library(knitr)
-opts_chunk$set(fig.width = 3, fig.height = 3)
+opts_chunk$set(
+  fig.width = 3,
+  fig.height = 3,
+  message = FALSE,
+  echo = TRUE,
+  warning = FALSE
+)
 ```
 
 ```{r, message = FALSE, fig.cap = "Figure 1"}
 library(funcgeo)
-library(grid)
 
-grid.draw(man)
+plot(man)
 ```
 
 ```{r, fig.cap = "Figure 7"}
-grid.draw(beside(man, man))
+plot(beside(man, man))
 ```
 
 ```{r}
-grid.draw(above(man, man))
+plot(above(man, man))
 ```
 
 ```{r, fig.cap = "Figure 15"}
-grid.draw(rot(man))
+plot(rot(man))
 ```
 
 ```{r}
-grid.draw(quartet(man, man, man, man))
+plot(quartet(man, man, man, man))
 ```
 
 ```{r}
-grid.draw(cycle(man))
+plot(cycle(man))
 ```
 
 ```{r, fig.cap = "Figure 18"}
-grid.draw(fish_p)
+plot(fish_p)
 ```
 
 ```{r, fig.cap = "Figure 19"}
-grid.draw(fish_q)
+plot(fish_q)
 ```
 
 ```{r, fig.cap = "Figure 23"}
-grid.draw(cycle(rot(fish_q)))
+plot(cycle(rot(fish_q)))
 ```
 
 footnotes^[P. Henderson "Functional Geometry"]

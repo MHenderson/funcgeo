@@ -9,43 +9,53 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+```{r setup, cache = FALSE, include = FALSE}
+library(knitr)
+opts_chunk$set(
+  fig.width = 3,
+  fig.height = 3,
+  message = FALSE,
+  echo = TRUE,
+  warning = FALSE
+)
+```
+
 http://eprints.soton.ac.uk/257577/1/funcgeo2.pdf
 
 ## Figure 1
 
 ```{r}
 library(funcgeo)
-library(grid)
 
-grid.draw(f)
+plot(f)
 ```
 
 ```{r}
-grid.draw(rot(f))
+plot(rot(f))
 ```
 
 ```{r}
-grid.draw(flip(f))
+plot(flip(f))
 ```
 
 ```{r}
-grid.draw(rot(flip(f)))
+plot(rot(flip(f)))
 ```
 
 ## Figure 2
 
 ```{r}
-grid.draw(above(f, f))
+plot(above(f, f))
 ```
 
 ```{r}
-grid.draw(beside(f, f))
+plot(beside(f, f))
 ```
 
 ```{r}
-grid.draw(above(beside(f, f), f))
+plot(above(beside(f, f), f))
 ```
 
 ```{r}
-grid.draw(rot(f, angle = 45))
+plot(rot(f, angle = 45))
 ```
