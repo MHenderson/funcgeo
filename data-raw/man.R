@@ -4,4 +4,6 @@ man <- polygonGrob(
   vp = viewport(width = 1, height = 1)
 )
 
-save(man, "data/man.rda")
+class(man) <- c("picture", class(man))
+
+save(man, file = "data/man.rda")

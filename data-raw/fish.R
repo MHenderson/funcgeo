@@ -5,12 +5,16 @@ fish_p <- polylineGrob(
   vp = viewport(width = 1, height = 1)
 )
 
+class(fish_p) <- c("picture", class(fish_p))
+
 fish_q <- polylineGrob(
   x = c(2,4,4,4,4,6,6,6,6,8,8,8,8,10,10,10,10,14,12,13,13,16,16,15,15,16,16,12,12,6,6,4,4,0,13,16,14,16,15,16,0,7,9,10,10,12,12,9,8,9,9,11,11,8,0,3,3,7,7,8,2,3,4,5,6,7)/16,
   y = c(0,5,5,7,0,5,5,7,0,5,5,8,0,6,6,9,0,11,0,4,4,8,8,10,10,16,16,10,10,7,7,7,7,8,0,6,0,4,0,2,10,11,12,10,10,12,12,12,15,13,13,15,15,15,12,13,13,15,15,16,16,13,16,14,16,15)/16,
   id = rep(1:33, each = 2),
   vp = viewport(width = 1, height = 1)
 )
+
+class(fish_q) <- c("picture", class(fish_q))
 
 save(fish_p, file = "data/fish_p.rda")
 save(fish_q, file = "data/fish_q.rda")

@@ -4,4 +4,6 @@ f <- linesGrob(
   vp = viewport(width = 1, height = 1)
 )
 
-save(f, "data-raw/f.rda")
+class(f) <- c("picture", class(f))
+
+save(f, file = "data/f.rda")
