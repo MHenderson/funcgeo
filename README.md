@@ -1,9 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!--
+[![Travis-CI Build Status](https://travis-ci.org/MHenderson/funcgeo.svg?branch=master)](https://travis-ci.org/MHenderson/funcgeo)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/MHenderson/funcgeo?branch=master&svg=true)](https://ci.appveyor.com/project/MHenderson/funcgeo)
+[![Coverage Status](https://img.shields.io/codecov/c/github/MHenderson/funcgeo/master.svg)](https://codecov.io/github/MHenderson/funcgeo?branch=master)
+-->
 funcgeo
 =======
 
-The goal of funcgeo is to reproduce the pictures in the following papers:
+The goal of funcgeo is to reproduce in R the pictures in the following papers:
 
 -   <http://users.ecs.soton.ac.uk/peter/funcgeo.pdf>
 -   <http://eprints.soton.ac.uk/257577/1/funcgeo2.pdf>
@@ -24,9 +29,8 @@ Examples
 
 ``` r
 library(funcgeo)
-library(grid)
 
-grid.draw(cycle(rot(fish_q)))
+plot(cycle(rot(fish_q)))
 ```
 
 ![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
