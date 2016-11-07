@@ -4,7 +4,7 @@
 \alias{beside}
 \title{Beside}
 \usage{
-beside(m, n, p, q)
+beside(p, q, m = 1, n = 1)
 }
 \arguments{
 \item{g}{grob}

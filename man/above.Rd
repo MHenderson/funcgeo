@@ -4,7 +4,7 @@
 \alias{above}
 \title{Above}
 \usage{
-above(m, n, p, q)
+above(p, q, m = 1, n = 1)
 }
 \arguments{
 \item{g}{grob}
