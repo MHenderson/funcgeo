@@ -2,17 +2,17 @@
 % Please edit documentation in R/beside.R
 \name{beside}
 \alias{beside}
-\title{Beside}
+\title{Superimpose two grobs, side-by-side.}
 \usage{
-beside(p, q, m = 1, n = 1)
+beside(picture, ...)
 }
 \arguments{
-\item{g}{grob}
+\item{p}{A picture}
 }
 \value{
-A grob
+A picture
 }
 \description{
-Beside
+Superimpose two grobs, side-by-side.
 }
 

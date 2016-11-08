@@ -2,17 +2,17 @@
 % Please edit documentation in R/rot.R
 \name{rot}
 \alias{rot}
-\title{Rotate}
+\title{Rotate a picture.}
 \usage{
-rot(g, angle = 90)
+rot(picture, ...)
 }
 \arguments{
-\item{g}{grob}
+\item{picture}{A picture}
 }
 \value{
-A grob
+Rotated picture
 }
 \description{
-Rotate
+Rotate a picture.
 }
 

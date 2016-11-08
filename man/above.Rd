@@ -2,17 +2,17 @@
 % Please edit documentation in R/above.R
 \name{above}
 \alias{above}
-\title{Above}
+\title{Superimpose two pictures, one above the other.}
 \usage{
-above(p, q, m = 1, n = 1)
+above(picture, ...)
 }
 \arguments{
-\item{g}{grob}
+\item{p}{A picture}
 }
 \value{
-A grob
+A picture
 }
 \description{
-Above
+Superimpose two pictures, one above the other.
 }
 
