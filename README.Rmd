@@ -34,4 +34,12 @@ library(funcgeo)
 plot(cycle(rot(fish_q)))
 ```
 
+```{r, message = FALSE, fig.width = 3, fig.height = 3}
+plot(quartet(fish_p, fish_q, fish_r, fish_s))
+```
+
+```{r, message = FALSE, fig.width = 3, fig.height = 3}
+plot(cycle(rot(fish_q)))
+```
+
 Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
