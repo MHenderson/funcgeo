@@ -59,8 +59,25 @@ plot(fish_p)
 plot(fish_q)
 ```
 
-```{r, fig.cap = "Figure 23"}
+```{r, fig.cap = "Figure 20"}
+plot(fish_r)
+```
+
+```{r, fig.cap = "Figure 21"}
+plot(fish_s)
+
+```
+```{r, fig.cap = "Figure 22: t = quartet(p, q, r, s)"}
+t <- quartet(fish_p, fish_q, fish_r, fish_s)
+plot(t)
+```
+
+```{r, fig.cap = "Figure 23: u = cycle(rot(q))"}
 plot(cycle(rot(fish_q)))
+```
+
+```{r, fig.cap = "Figure 24: u = cycle(rot(t))"}
+plot(cycle(rot(t)))
 ```
 
 footnotes^[P. Henderson "Functional Geometry"]
