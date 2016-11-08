@@ -35,4 +35,16 @@ plot(cycle(rot(fish_q)))
 
 ![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
 
+``` r
+plot(quartet(fish_p, fish_q, fish_r, fish_s))
+```
+
+![](README_files/figure-markdown_github/unnamed-chunk-2-1.png)
+
+``` r
+plot(cycle(rot(fish_q)))
+```
+
+![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
+
 Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
