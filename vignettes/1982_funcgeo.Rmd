@@ -80,4 +80,14 @@ plot(cycle(rot(fish_q)))
 plot(cycle(rot(t)))
 ```
 
+```{r, fig.cap = "Figure 25: side1"}
+nill <- grid::nullGrob()
+side1 <- quartet(nill, nill, rot(t), t)
+plot(side1)
+```
+
+```{r, fig.cap = "Figure 26: side2"}
+side2 <- quartet(side1, side1, rot(t), t)
+plot(side2)
+```
 footnotes^[P. Henderson "Functional Geometry"]
