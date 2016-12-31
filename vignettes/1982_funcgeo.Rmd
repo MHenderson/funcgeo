@@ -73,7 +73,8 @@ plot(t)
 ```
 
 ```{r, fig.cap = "Figure 23: u = cycle(rot(q))"}
-plot(cycle(rot(fish_q)))
+u <- cycle(rot(fish_q))
+plot(u)
 ```
 
 ```{r, fig.cap = "Figure 24: u = cycle(rot(t))"}
@@ -90,4 +91,15 @@ plot(side1)
 side2 <- quartet(side1, side1, rot(t), t)
 plot(side2)
 ```
+
+```{r, fig.cap = "Figure 27: corner1"}
+corner1 <- quartet(nill, nill, nill, u)
+plot(corner1)
+```
+
+```{r, fig.cap = "Figure 28: corner2"}
+corner2 <- quartet(corner1, side1, rot(side1), u)
+plot(corner2)
+```
+
 footnotes^[P. Henderson "Functional Geometry"]
