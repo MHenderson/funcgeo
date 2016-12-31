@@ -102,4 +102,13 @@ corner2 <- quartet(corner1, side1, rot(side1), u)
 plot(corner2)
 ```
 
+```{r, fig.cap = "Figure 29: pseudocorner"}
+pseudocorner <- quartet(corner2, side2, rot(side2), rot(t))
+plot(pseudocorner)
+```
+
+```{r, fig.cap = "Figure 30: pseudolimit"}
+pseudolimit <- cycle(pseudocorner)
+plot(pseudolimt)
+```
 footnotes^[P. Henderson "Functional Geometry"]
