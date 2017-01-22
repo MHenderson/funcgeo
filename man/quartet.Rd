@@ -7,7 +7,13 @@
 quartet(p, q, r, s)
 }
 \arguments{
-\item{g}{grob}
+\item{p}{A picture}
+
+\item{q}{Another picture}
+
+\item{r}{Yet another picture}
+
+\item{s}{The last picture}
 }
 \value{
 A grob
