@@ -35,6 +35,14 @@ plot(man)
 plot(beside(man, man))
 ```
 
+```{r, fig.cap = "Figure 8"}
+plot(beside(man, man, m = 1, n = 2))
+```
+
+```{r, fig.cap = "Figure 8.5"}
+plot(beside(man, rot(man), m = 1, n = 2))
+```
+
 ```{r}
 plot(above(man, man))
 ```
@@ -65,8 +73,8 @@ plot(fish_r)
 
 ```{r, fig.cap = "Figure 21"}
 plot(fish_s)
-
 ```
+
 ```{r, fig.cap = "Figure 22: t = quartet(p, q, r, s)"}
 t <- quartet(fish_p, fish_q, fish_r, fish_s)
 plot(t)
@@ -107,8 +115,23 @@ pseudocorner <- quartet(corner2, side2, rot(side2), rot(t))
 plot(pseudocorner)
 ```
 
-```{r, fig.cap = "Figure 30: pseudolimit"}
+```{r, fig.cap = "Figure 30: pseudolimit", fig.width = 8, fig.height = 8}
 pseudolimit <- cycle(pseudocorner)
-plot(pseudolimt)
+plot(pseudolimit)
 ```
+
+```{r, fig.cap = "Figure 31: corner"}
+corner <- nonet(
+  corner2, side2, side2,
+  rot(side2), u, rot(t),
+  rot(side2), rot(t), rot(fish_q)
+)
+plot(corner)
+```
+
+```{r, fig.cap = "Figure 32: Squarelimit", fig.width = 8, fig.height = 8}
+squarelimit <- cycle(corner)
+plot(squarelimit)
+```
+
 footnotes^[P. Henderson "Functional Geometry"]
