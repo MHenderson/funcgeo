@@ -6,7 +6,9 @@
 #' @return A new grob obtained by superimposing p and q, one above the other.
 #' @export
 above.grob <- function(p, q, m = 1, n = 1) {
-  g <- gridExtra::arrangeGrob(p, q, ncol = 1, heights = c(m/(m + n), n/(m + n)))
-  class(g) <- c("picture", class(g))
-  return(g)
+  fg <- grid::frameGrob(layout = grid::grid.layout(2, 1))
+  fg <- grid::packGrob(fg, p, row = 1, height = grid::unit(m/(m + n), "npc"))
+  fg <- grid::packGrob(fg, q, row = 2, height = grid::unit(n/(m + n), "npc"))
+  class(fg) <- c("picture", class(fg))
+  return(fg)
 }

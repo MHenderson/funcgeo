@@ -4,7 +4,9 @@
 #' @return A grob
 #' @export
 beside.grob <- function(p, q, m = 1, n = 1) {
-  g <- gridExtra::arrangeGrob(p, q, ncol = 2, widths = c(n*m/(n + 1), m^2/(m + 1)))
-  class(g) <- c("picture", class(g))
-  return(g)
+  fg <- grid::frameGrob(layout = grid::grid.layout(1, 2))
+  fg <- grid::packGrob(fg, p, col = 1, width = grid::unit(m/(m + n), "npc"))
+  fg <- grid::packGrob(fg, q, col = 2, width = grid::unit(n/(m + n), "npc"))
+  class(fg) <- c("picture", class(fg))
+  return(fg)
 }
