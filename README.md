@@ -1,10 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-<!--
-[![Travis-CI Build Status](https://travis-ci.org/MHenderson/funcgeo.svg?branch=master)](https://travis-ci.org/MHenderson/funcgeo)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/MHenderson/funcgeo?branch=master&svg=true)](https://ci.appveyor.com/project/MHenderson/funcgeo)
-[![Coverage Status](https://img.shields.io/codecov/c/github/MHenderson/funcgeo/master.svg)](https://codecov.io/github/MHenderson/funcgeo?branch=master)
--->
+[![Travis-CI Build Status](https://travis-ci.org/MHenderson/funcgeo.svg?branch=master)](https://travis-ci.org/MHenderson/funcgeo) [![Coverage Status](https://img.shields.io/codecov/c/github/MHenderson/funcgeo/master.svg)](https://codecov.io/github/MHenderson/funcgeo?branch=master)
+
 funcgeo
 =======
 
