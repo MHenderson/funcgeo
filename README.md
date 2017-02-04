@@ -27,22 +27,26 @@ Examples
 ``` r
 library(funcgeo)
 
-plot(cycle(rot(fish_q)))
-```
+t <- quartet(fish_p, fish_q, fish_r, fish_s)
+u <- cycle(rot(fish_q))
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
+side1 <- quartet(nill, nill, rot(t), t)
+side2 <- quartet(side1, side1, rot(t), t)
 
-``` r
-plot(quartet(fish_p, fish_q, fish_r, fish_s))
+corner1 <- quartet(nill, nill, nill, u)
+corner2 <- quartet(corner1, side1, rot(side1), u)
+
+corner <- nonet(
+  corner2, side2, side2,
+  rot(side2), u, rot(t),
+  rot(side2), rot(t), rot(fish_q)
+)
+
+squarelimit <- cycle(corner)
+plot(squarelimit)
 ```
 
 ![](README_files/figure-markdown_github/unnamed-chunk-2-1.png)
-
-``` r
-plot(cycle(rot(fish_q)))
-```
-
-![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 To save a picture as SVG, use the `svg` device.
 

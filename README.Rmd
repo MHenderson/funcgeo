@@ -28,18 +28,31 @@ install.packages("funcgeo")
 
 ## Examples
 
-```{r, message = FALSE, fig.width = 3, fig.height = 3}
+```{r, include = FALSE}
+nill <- grid::nullGrob()
+```
+
+
+```{r, message = FALSE, fig.width = 5, fig.height = 5}
 library(funcgeo)
 
-plot(cycle(rot(fish_q)))
-```
+t <- quartet(fish_p, fish_q, fish_r, fish_s)
+u <- cycle(rot(fish_q))
 
-```{r, message = FALSE, fig.width = 3, fig.height = 3}
-plot(quartet(fish_p, fish_q, fish_r, fish_s))
-```
+side1 <- quartet(nill, nill, rot(t), t)
+side2 <- quartet(side1, side1, rot(t), t)
 
-```{r, message = FALSE, fig.width = 3, fig.height = 3}
-plot(cycle(rot(fish_q)))
+corner1 <- quartet(nill, nill, nill, u)
+corner2 <- quartet(corner1, side1, rot(side1), u)
+
+corner <- nonet(
+  corner2, side2, side2,
+  rot(side2), u, rot(t),
+  rot(side2), rot(t), rot(fish_q)
+)
+
+squarelimit <- cycle(corner)
+plot(squarelimit)
 ```
 
 To save a picture as SVG, use the `svg` device.
