@@ -33,7 +33,7 @@ nill <- grid::nullGrob()
 ```
 
 
-```{r, message = FALSE, fig.width = 5, fig.height = 5}
+```{r, message = FALSE, fig.width = 8, fig.height = 8}
 library(funcgeo)
 
 t <- quartet(fish_p, fish_q, fish_r, fish_s)
