@@ -27,9 +27,9 @@ fish_s <- tibble(
 )
 
 nill <- tibble(
-  x = c(),
-  y = c(),
-  id = c()
+  x = c(0, 0, 1, 1),
+  y = c(0, 1, 1, 0),
+  id = c(1, 1, 2, 2)
 )
 
 
@@ -49,8 +49,9 @@ fish_p <- convert_to_geometry(fish_p)
 fish_q <- convert_to_geometry(fish_q)
 fish_r <- convert_to_geometry(fish_r)
 fish_s <- convert_to_geometry(fish_s)
+nill <- convert_to_geometry(nill)
 
-nill <- nill %>% st_as_sf(coords = c("x", "y")) %>% st_geometry() %>% st_union()
+#nill <- nill %>% st_as_sf(coords = c("x", "y")) %>% st_geometry() %>% st_union()
 
 # rot ---------------------------------------------------------------------
 
@@ -69,7 +70,7 @@ flip <- function(p) p * matrix(c(-1, 0, 0, 1), 2, 2)
 above <- function(p, q, m = 1, n = 1) {
   M <- matrix(c(1, 0, 0, m/(m + n)), 2, 2)
   N <- matrix(c(1, 0, 0, n/(m + n)), 2, 2)
-  st_union(p * M, q * N + c(0, m/(m + n)))
+  st_union(p * M + c(0, m/(m + n)), q * N)
 }
 
 # beside ------------------------------------------------------------------
