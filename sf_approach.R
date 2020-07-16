@@ -49,7 +49,8 @@ fish_p <- convert_to_geometry(fish_p)
 fish_q <- convert_to_geometry(fish_q)
 fish_r <- convert_to_geometry(fish_r)
 fish_s <- convert_to_geometry(fish_s)
-nill <- convert_to_geometry(nill)
+
+nill <- nill %>% st_as_sf(coords = c("x", "y")) %>% st_geometry() %>% st_union()
 
 # rot ---------------------------------------------------------------------
 
@@ -68,14 +69,16 @@ flip <- function(p) p * matrix(c(-1, 0, 0, 1), 2, 2)
 
 above <- function(p, q, m = 1, n = 1) {
   M <- matrix(c(1, 0, 0, m/(m + n)), 2, 2)
-  st_union(p * M, q * M + c(0, n/(m + n)))
+  N <- matrix(c(1, 0, 0, n/(m + n)), 2, 2)
+  st_union(p * M, q * N + c(0, m/(m + n)))
 }
 
 # beside ------------------------------------------------------------------
 
 beside <- function(p, q, m = 1, n = 1) {
   M <- matrix(c(m/(m + n), 0, 0, 1), 2, 2)
-  st_union(x = p * M, y = q * M + c(n/(m+n), 0))
+  N <- matrix(c(n/(m + n), 0, 0, 1), 2, 2)
+  st_union(x = p * M, y = q * N + c(m/(m+n), 0))
 }
 
 # quartet -----------------------------------------------------------------
