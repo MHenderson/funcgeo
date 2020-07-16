@@ -32,7 +32,6 @@ nill <- tibble(
   id = c(1, 1, 2, 2)
 )
 
-
 # fish geometries ---------------------------------------------------------
 
 convert_to_geometry <- function(X) {
@@ -51,11 +50,8 @@ fish_r <- convert_to_geometry(fish_r)
 fish_s <- convert_to_geometry(fish_s)
 nill <- convert_to_geometry(nill)
 
-#nill <- nill %>% st_as_sf(coords = c("x", "y")) %>% st_geometry() %>% st_union()
-
 # rot ---------------------------------------------------------------------
 
-# i need to rotate around centre
 rot_a <- function(a) matrix(c(cos(a), sin(a), -sin(a), cos(a)), 2, 2)
 rot <- function(p, a = -pi/2) {
   p * rot_a(a) + c(1, 0)
