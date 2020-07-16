@@ -56,9 +56,8 @@ nill <- nill %>% st_as_sf(coords = c("x", "y")) %>% st_geometry() %>% st_union()
 
 # i need to rotate around centre
 rot_a <- function(a) matrix(c(cos(a), sin(a), -sin(a), cos(a)), 2, 2)
-rot <- function(p, a = pi/2) {
-  M <- matrix(c(-1, 0, 0, 1), 2, 2)
-  p * M * rot_a(a)
+rot <- function(p, a = -pi/2) {
+  p * rot_a(a) + c(1, 0)
 }
 
 # flip --------------------------------------------------------------------
