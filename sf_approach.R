@@ -70,7 +70,7 @@ flip <- function(p) p * matrix(c(-1, 0, 0, 1), 2, 2)
 above <- function(p, q, m = 1, n = 1) {
   M <- matrix(c(1, 0, 0, m/(m + n)), 2, 2)
   N <- matrix(c(1, 0, 0, n/(m + n)), 2, 2)
-  st_union(p * M + c(0, m/(m + n)), q * N)
+  st_union(p * M + c(0, n/(m + n)), q * N)
 }
 
 # beside ------------------------------------------------------------------
@@ -121,3 +121,7 @@ corner <- nonet(
 )
 
 squarelimit <- cycle(corner)
+
+ggplot(squarelimit) +
+  geom_sf() +
+  theme_void()
