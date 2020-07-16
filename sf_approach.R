@@ -32,40 +32,24 @@ nill <- tibble(
   id = c()
 )
 
-fish_p_sf <- st_as_sf(fish_p, coords = c("x", "y"))
-fish_q_sf <- st_as_sf(fish_q, coords = c("x", "y"))
-fish_r_sf <- st_as_sf(fish_r, coords = c("x", "y"))
-fish_s_sf <- st_as_sf(fish_s, coords = c("x", "y"))
 
-nill_sf <- st_as_sf(nill, coords = c("x", "y"))
+# fish geometries ---------------------------------------------------------
 
-# geometries --------------------------------------------------------------
+convert_to_geometry <- function(X) {
+  X %>%
+    st_as_sf(coords = c("x", "y")) %>%
+    group_by(id) %>%
+    summarize() %>%
+    st_cast("LINESTRING") %>%
+    st_geometry() %>%
+    st_union()
+}
 
-fish_p_lines_sf <- fish_p_sf %>%
-  group_by(id) %>%
-  summarize() %>%
-  st_cast("LINESTRING")
-
-fish_q_lines_sf <- fish_q_sf %>%
-  group_by(id) %>%
-  summarize() %>%
-  st_cast("LINESTRING")
-
-fish_r_lines_sf <- fish_r_sf %>%
-  group_by(id) %>%
-  summarize() %>%
-  st_cast("LINESTRING")
-
-fish_s_lines_sf <- fish_s_sf %>%
-  group_by(id) %>%
-  summarize() %>%
-  st_cast("LINESTRING")
-
-fish_p <- st_geometry(fish_p_lines_sf) %>% st_union()
-fish_q <- st_geometry(fish_q_lines_sf) %>% st_union()
-fish_r <- st_geometry(fish_r_lines_sf) %>% st_union()
-fish_s <- st_geometry(fish_s_lines_sf) %>% st_union()
-nill <- st_geometry(nill_sf) %>% st_union()
+fish_p <- convert_to_geometry(fish_p)
+fish_q <- convert_to_geometry(fish_q)
+fish_r <- convert_to_geometry(fish_r)
+fish_s <- convert_to_geometry(fish_s)
+nill <- convert_to_geometry(nill)
 
 # rot ---------------------------------------------------------------------
 
