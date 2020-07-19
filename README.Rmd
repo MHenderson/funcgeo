@@ -2,6 +2,20 @@
 output: github_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo       = TRUE,
+  warning    = FALSE,
+  message    = FALSE,
+  error      = FALSE,
+  fig.path   = "figure/",
+  comment    = "#>",
+  collapse   = TRUE,
+  fig.width  = 8
+)
+```
+
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 [![Travis-CI Build Status](https://travis-ci.org/MHenderson/funcgeo.svg?branch=master)](https://travis-ci.org/MHenderson/funcgeo)
 [![Coverage Status](https://img.shields.io/codecov/c/github/MHenderson/funcgeo/master.svg)](https://codecov.io/github/MHenderson/funcgeo?branch=master)
@@ -18,31 +32,29 @@ following two papers of Peter Henderson:
 
 ## Installation
 
-You can install **funcgeo** from my Drat repository on Github:
+You can install **funcgeo** from Github
 
 ```R
-# install.packages("drat")
-drat::addRepo("MHenderson")
-install.packages("funcgeo")
+remotes::install_github("MHenderson/funcgeo")
 ```
 
 ## Examples
 
-```{r, include = FALSE}
-nill <- grid::nullGrob()
+```{r nil, include = FALSE}
+nil <- grid::nullGrob()
 ```
 
 
-```{r, message = FALSE, fig.width = 8, fig.height = 8}
+```{r squarelimit, message = FALSE, fig.width = 8, fig.height = 8}
 library(funcgeo)
 
 t <- quartet(fish_p, fish_q, fish_r, fish_s)
 u <- cycle(rot(fish_q))
 
-side1 <- quartet(nill, nill, rot(t), t)
+side1 <- quartet(nil, nil, rot(t), t)
 side2 <- quartet(side1, side1, rot(t), t)
 
-corner1 <- quartet(nill, nill, nill, u)
+corner1 <- quartet(nil, nil, nil, u)
 corner2 <- quartet(corner1, side1, rot(side1), u)
 
 corner <- nonet(
@@ -57,7 +69,7 @@ plot(squarelimit)
 
 To save a picture as SVG, use the `svg` device.
 
-```{r, eval = FALSE}
+```{r svg, eval = FALSE}
 svg("fish.svg", width = 3, height = 3)
 plot(quartet(fish_p, fish_q, fish_r, fish_s))
 dev.off()
