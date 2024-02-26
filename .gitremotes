@@ -1,8 +1,0 @@
-bucket	git@bitbucket.org:matthew/funcgeo.git (fetch)
-bucket	git@bitbucket.org:matthew/funcgeo.git (push)
-github	git@github.com:MHenderson/funcgeo.git (fetch)
-github	git@github.com:MHenderson/funcgeo.git (push)
-gitlab	git@gitlab.com:MHenderson1/funcgeo.git (fetch)
-gitlab	git@gitlab.com:MHenderson1/funcgeo.git (push)
-srht	git@git.sr.ht:~mhenderson/funcgeo (fetch)
-srht	git@git.sr.ht:~mhenderson/funcgeo (push)
