@@ -1,7 +1,7 @@
 Package: funcgeo
 Type: Package
 Title: Functional Geometry in R
-Version: 0.1.0.9001
+Version: 0.2.0
 Authors@R: person("Matthew", "Henderson", email = "matthew.james.henderson@gmail.com",
                   role = c("aut", "cre"))
 Description: Peter Henderson's Functional Geometry in R.
