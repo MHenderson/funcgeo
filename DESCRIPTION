@@ -1,20 +1,14 @@
 Package: funcgeo
 Type: Package
 Title: Functional Geometry in R
-Version: 0.2.0
+Version: 0.2.0.9000
 Authors@R: person("Matthew", "Henderson", email = "matthew.james.henderson@gmail.com",
                   role = c("aut", "cre"))
 Description: Peter Henderson's Functional Geometry in R.
 License: MIT + file LICENSE
 LazyData: TRUE
 Imports:
-    grid,
-    gridExtra
+    grid
 RoxygenNote: 5.0.1
-Suggests: testthat,
-    knitr,
-    rmarkdown,
-    covr
-VignetteBuilder: knitr
 URL: https://github.com/mhenderson/funcgeo
 BugReports: https://github.com/mhenderson/funcgeo/issues
