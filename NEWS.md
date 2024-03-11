@@ -1,5 +1,9 @@
 # funcgeo (development version)
 
+# funcgeo 0.2.1
+
+* Fixed everything so that the check-release action passes.
+
 # funcgeo 0.2.0
 
 * Moved the README example to the squarelimit project.
