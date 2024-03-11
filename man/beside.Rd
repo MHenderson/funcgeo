@@ -4,15 +4,22 @@
 \alias{beside}
 \title{Superimpose two grobs, side-by-side.}
 \usage{
-beside(picture, ...)
+beside(p, q, m = 1, n = 1)
 }
 \arguments{
-\item{p}{A picture}
+\item{p}{grob}
+
+\item{q}{grob}
+
+\item{m}{An integer}
+
+\item{n}{Another integer}
 }
 \value{
+A grob
+
 A picture
 }
 \description{
 Superimpose two grobs, side-by-side.
 }
-

@@ -4,10 +4,16 @@
 \alias{above}
 \title{Superimpose two pictures, one above the other.}
 \usage{
-above(picture, ...)
+above(p, q, m, n)
 }
 \arguments{
 \item{p}{A picture}
+
+\item{q}{Another picture}
+
+\item{m}{An integer}
+
+\item{n}{Another integer}
 }
 \value{
 A picture
@@ -15,4 +21,3 @@ A picture
 \description{
 Superimpose two pictures, one above the other.
 }
-

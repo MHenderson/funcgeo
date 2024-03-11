@@ -4,7 +4,7 @@
 \alias{plot.picture}
 \title{plot.picture}
 \usage{
-\method{plot}{picture}(picture)
+\method{plot}{picture}(x, ...)
 }
 \arguments{
 \item{picture}{A picture}
@@ -15,4 +15,3 @@ grid.draw(picture)
 \description{
 plot.picture
 }
-

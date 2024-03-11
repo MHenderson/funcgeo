@@ -7,6 +7,8 @@
 \method{above}{grob}(p, q, m = 1, n = 1)
 }
 \arguments{
+\item{p}{A grob}
+
 \item{q}{Another grob}
 
 \item{m}{An integer}
@@ -19,4 +21,3 @@ A new grob obtained by superimposing p and q, one above the other.
 \description{
 Superimpose two grobs, one above the other.
 }
-

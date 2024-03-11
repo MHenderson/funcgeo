@@ -15,4 +15,3 @@ Flipped grob
 \description{
 Flip a grob.
 }
-
