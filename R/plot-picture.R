@@ -1,8 +1,9 @@
 #' plot.picture
 #'
-#' @param picture A picture
+#' @param x A picture
+#' @param ... Anything else.
 #' @return grid.draw(picture)
 #' @export
-plot.picture <- function(picture) {
-  grid::grid.draw(picture)
+plot.picture <- function(x, ...) {
+  grid::grid.draw(x)
 }

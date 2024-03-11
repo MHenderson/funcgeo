@@ -1,6 +1,7 @@
 #' Rotate a grob.
 #'
 #' @param g A grob
+#' @param angle An angle
 #' @return Rotated grob
 #' @export
 rot.grob <- function(g, angle = 90) {

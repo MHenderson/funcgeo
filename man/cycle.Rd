@@ -7,12 +7,11 @@
 cycle(p)
 }
 \arguments{
-\item{g}{grob}
+\item{p}{A picture}
 }
 \value{
-A grob
+A picture
 }
 \description{
 Cycle
 }
-

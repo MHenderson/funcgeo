@@ -8,6 +8,8 @@
 }
 \arguments{
 \item{g}{A grob}
+
+\item{angle}{An angle}
 }
 \value{
 Rotated grob
@@ -15,4 +17,3 @@ Rotated grob
 \description{
 Rotate a grob.
 }
-

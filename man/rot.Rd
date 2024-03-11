@@ -4,10 +4,12 @@
 \alias{rot}
 \title{Rotate a picture.}
 \usage{
-rot(picture, ...)
+rot(g, angle)
 }
 \arguments{
-\item{picture}{A picture}
+\item{g}{A picture}
+
+\item{angle}{An angle}
 }
 \value{
 Rotated picture
@@ -15,4 +17,3 @@ Rotated picture
 \description{
 Rotate a picture.
 }
-

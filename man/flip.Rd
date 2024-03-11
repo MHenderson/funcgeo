@@ -4,10 +4,10 @@
 \alias{flip}
 \title{Flip a picture.}
 \usage{
-flip(picture, ...)
+flip(g)
 }
 \arguments{
-\item{picture}{A picture}
+\item{g}{A picture}
 }
 \value{
 Flipped picture
@@ -15,4 +15,3 @@ Flipped picture
 \description{
 Flip a picture.
 }
-

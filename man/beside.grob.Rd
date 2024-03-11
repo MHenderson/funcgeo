@@ -7,7 +7,13 @@
 \method{beside}{grob}(p, q, m = 1, n = 1)
 }
 \arguments{
-\item{g}{grob}
+\item{p}{grob}
+
+\item{q}{grob}
+
+\item{m}{An integer}
+
+\item{n}{Another integer}
 }
 \value{
 A grob
@@ -15,4 +21,3 @@ A grob
 \description{
 Superimpose two grobs side-by-side.
 }
-
