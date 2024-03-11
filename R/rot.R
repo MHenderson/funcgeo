@@ -1,6 +1,6 @@
 #' Rotate a picture.
 #'
-#' @param picture A picture
+#' @param g A picture
 #' @param angle An angle
 #' @return Rotated picture
 #' @export

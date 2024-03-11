@@ -7,7 +7,7 @@
 \method{plot}{picture}(x, ...)
 }
 \arguments{
-\item{picture}{A picture}
+\item{x}{A picture}
 }
 \value{
 grid.draw(picture)

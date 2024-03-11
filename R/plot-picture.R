@@ -1,6 +1,6 @@
 #' plot.picture
 #'
-#' @param picture A picture
+#' @param x A picture
 #' @return grid.draw(picture)
 #' @export
 plot.picture <- function(x, ...) {

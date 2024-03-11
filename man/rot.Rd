@@ -7,9 +7,9 @@
 rot(g, angle)
 }
 \arguments{
-\item{angle}{An angle}
+\item{g}{A picture}
 
-\item{picture}{A picture}
+\item{angle}{An angle}
 }
 \value{
 Rotated picture

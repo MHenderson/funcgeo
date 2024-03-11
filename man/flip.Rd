@@ -7,7 +7,7 @@
 flip(g)
 }
 \arguments{
-\item{picture}{A picture}
+\item{g}{A picture}
 }
 \value{
 Flipped picture
