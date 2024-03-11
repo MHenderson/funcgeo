@@ -1,6 +1,9 @@
 #' Superimpose two grobs side-by-side.
 #'
-#' @param g grob
+#' @param p grob
+#' @param q grob
+#' @param m An integer
+#' @param n Another integer
 #' @return A grob
 #' @export
 beside.grob <- function(p, q, m = 1, n = 1) {

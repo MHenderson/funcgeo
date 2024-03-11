@@ -1,5 +1,6 @@
 #' Superimpose two grobs, one above the other.
 #'
+#' @param p A grob
 #' @param q Another grob
 #' @param m An integer
 #' @param n Another integer

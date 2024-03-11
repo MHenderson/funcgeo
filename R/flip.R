@@ -3,6 +3,6 @@
 #' @param picture A picture
 #' @return Flipped picture
 #' @export
-flip <- function(picture, ...) {
+flip <- function(picture) {
   UseMethod("flip", picture)
 }
