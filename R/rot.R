@@ -4,6 +4,6 @@
 #' @param angle An angle
 #' @return Rotated picture
 #' @export
-rot <- function(picture, angle) {
-  UseMethod("rot", picture)
+rot <- function(g, angle) {
+  UseMethod("rot", g)
 }
