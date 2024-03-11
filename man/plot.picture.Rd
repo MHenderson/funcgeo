@@ -8,6 +8,8 @@
 }
 \arguments{
 \item{x}{A picture}
+
+\item{...}{Anything else.}
 }
 \value{
 grid.draw(picture)
