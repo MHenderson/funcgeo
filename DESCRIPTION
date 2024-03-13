@@ -1,13 +1,14 @@
 Package: funcgeo
 Type: Package
 Title: Functional Geometry in R
-Version: 0.2.1
+Version: 0.2.1.9000
 Authors@R: person("Matthew", "Henderson", email = "matthew.james.henderson@gmail.com",
                   role = c("aut", "cre"))
 Description: Peter Henderson's Functional Geometry in R.
 License: MIT + file LICENSE
 Imports:
     grid
+Encoding: UTF-8
 RoxygenNote: 7.2.3
 URL: https://github.com/mhenderson/funcgeo
 BugReports: https://github.com/mhenderson/funcgeo/issues

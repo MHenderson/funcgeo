@@ -1,9 +1,9 @@
 #' Quartet
 #'
-#' @param p A picture
-#' @param q Another picture
-#' @param r Yet another picture
-#' @param s The last picture
+#' @param p A grob
+#' @param q Another grob
+#' @param r Yet another grob
+#' @param s The last grob
 #' @return A grob
 #' @export
 quartet <- function(p, q, r, s) {

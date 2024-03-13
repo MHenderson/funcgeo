@@ -2,16 +2,16 @@
 % Please edit documentation in R/flip.R
 \name{flip}
 \alias{flip}
-\title{Flip a picture.}
+\title{Flip a grob.}
 \usage{
 flip(g)
 }
 \arguments{
-\item{g}{A picture}
+\item{g}{A grob}
 }
 \value{
-Flipped picture
+Flipped grob
 }
 \description{
-Flip a picture.
+Flip a grob.
 }

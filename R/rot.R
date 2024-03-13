@@ -1,9 +1,11 @@
-#' Rotate a picture.
+#' Rotate a grob.
 #'
-#' @param g A picture
+#' @param g A grob
 #' @param angle An angle
-#' @return Rotated picture
+#' @return Rotated grob
 #' @export
-rot <- function(g, angle) {
-  UseMethod("rot", g)
+rot <- function(g, angle = 90) {
+  grid::editGrob(g, vp = grid::viewport(
+    angle  = ifelse(is.null(g$vp$angle), angle, g$vp$angle + angle))
+  )
 }
