@@ -1,14 +1,14 @@
 #' Nonet
 #'
-#' @param a A picture
-#' @param s Another picture
-#' @param d Yet another picture
-#' @param f The last picture
-#' @param g A picture
-#' @param h Another picture
-#' @param j Yet another picture
-#' @param k The last picture
-#' @param l The last picture
+#' @param a A grob
+#' @param s Another grob
+#' @param d Yet another grob
+#' @param f The last grob
+#' @param g A grob
+#' @param h Another grob
+#' @param j Yet another grob
+#' @param k The last grob
+#' @param l The last grob
 #' @return A grob
 #' @export
 nonet <- function(a, s, d, f, g, h, j, k, l) {  C <- beside(f, beside(g, h, m = 1, n = 1), m = 1, n = 2)

@@ -1,8 +1,8 @@
-#' Flip a picture.
+#' Flip a grob.
 #'
-#' @param g A picture
-#' @return Flipped picture
+#' @param g A grob
+#' @return Flipped grob
 #' @export
 flip <- function(g) {
-  UseMethod("flip", g)
+  grid::editGrob(g, x = grid::unit(1, "npc") - g$x)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/beside.R
 \name{beside}
 \alias{beside}
-\title{Superimpose two grobs, side-by-side.}
+\title{Superimpose two grobs side-by-side.}
 \usage{
 beside(p, q, m = 1, n = 1)
 }
@@ -17,9 +17,7 @@ beside(p, q, m = 1, n = 1)
 }
 \value{
 A grob
-
-A picture
 }
 \description{
-Superimpose two grobs, side-by-side.
+Superimpose two grobs side-by-side.
 }

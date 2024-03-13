@@ -2,22 +2,22 @@
 % Please edit documentation in R/above.R
 \name{above}
 \alias{above}
-\title{Superimpose two pictures, one above the other.}
+\title{Superimpose two grobs, one above the other.}
 \usage{
-above(p, q, m, n)
+above(p, q, m = 1, n = 1)
 }
 \arguments{
-\item{p}{A picture}
+\item{p}{A grob}
 
-\item{q}{Another picture}
+\item{q}{Another grob}
 
 \item{m}{An integer}
 
 \item{n}{Another integer}
 }
 \value{
-A picture
+A new grob obtained by superimposing p and q, one above the other.
 }
 \description{
-Superimpose two pictures, one above the other.
+Superimpose two grobs, one above the other.
 }
