@@ -2,3 +2,6 @@
 ^\.Rproj\.user$
 ^CONDUCT\.md$
 ^.github$
+^funcgeo\.Rcheck$
+^funcgeo.*\.tar\.gz$
+^funcgeo.*\.tgz$

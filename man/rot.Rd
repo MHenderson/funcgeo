@@ -2,18 +2,20 @@
 % Please edit documentation in R/rot.R
 \name{rot}
 \alias{rot}
-\title{Rotate a grob.}
+\title{Rotate a picture}
 \usage{
 rot(g, angle = 90)
 }
 \arguments{
-\item{g}{A grob}
+\item{g}{A `grid::grob` picture}
 
 \item{angle}{An angle}
 }
 \value{
-Rotated grob
+A rotated `grid::grob` picture
 }
 \description{
-Rotate a grob.
+`rot` returns a new picture, made by rotating the input picture. If no angle
+is specified then the new picture will be rotated 90 degrees. A different
+angle can be specified with the `angle` argument.
 }
