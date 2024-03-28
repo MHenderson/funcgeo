@@ -2,16 +2,17 @@
 % Please edit documentation in R/flip.R
 \name{flip}
 \alias{flip}
-\title{Flip a grob.}
+\title{Flip a picture}
 \usage{
 flip(g)
 }
 \arguments{
-\item{g}{A grob}
+\item{g}{A `grid::grob` picture}
 }
 \value{
-Flipped grob
+A flipped `grid::grob` picture
 }
 \description{
-Flip a grob.
+`flip` returns a new picture made by flipping the input picture along
+its vertical centre axis.
 }
