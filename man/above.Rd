@@ -2,22 +2,25 @@
 % Please edit documentation in R/above.R
 \name{above}
 \alias{above}
-\title{Superimpose two grobs, one above the other.}
+\title{Superimpose two pictures, one above the other.}
 \usage{
 above(p, q, m = 1, n = 1)
 }
 \arguments{
-\item{p}{A grob}
+\item{p}{A `grid::grob` picture}
 
-\item{q}{Another grob}
+\item{q}{Another `grid::grob` picture}
 
 \item{m}{An integer}
 
 \item{n}{Another integer}
 }
 \value{
-A new grob obtained by superimposing p and q, one above the other.
+A new `grid::grob` picture obtained by superimposing p and q, one above the other.
 }
 \description{
-Superimpose two grobs, one above the other.
+`above` returns a new picture made by placing the first input picture
+above the second input picture. The user can also provide arguments `m`
+and `n` in which case the pictures will be placed so that they occupy the
+output picture in a m:n ratio.
 }
