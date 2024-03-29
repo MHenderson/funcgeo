@@ -2,22 +2,25 @@
 % Please edit documentation in R/beside.R
 \name{beside}
 \alias{beside}
-\title{Superimpose two grobs side-by-side.}
+\title{Superimpose two pictures side-by-side.}
 \usage{
 beside(p, q, m = 1, n = 1)
 }
 \arguments{
-\item{p}{grob}
+\item{p}{A `grid::grob` picture}
 
-\item{q}{grob}
+\item{q}{Another `grid::grob` picture}
 
 \item{m}{An integer}
 
 \item{n}{Another integer}
 }
 \value{
-A grob
+A new `grid::grob` picture obtained by superimposing p and q, one beside the other.
 }
 \description{
-Superimpose two grobs side-by-side.
+`beside` returns a new picture made by placing the first input picture
+beside the second input picture. The user can also provide arguments `m`
+and `n` in which case the pictures will be placed so that they occupy the
+output picture in a m:n ratio.
 }
