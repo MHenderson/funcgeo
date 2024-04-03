@@ -1,5 +1,10 @@
 # funcgeo (development version)
 
+# funcgeo 0.3.0
+
+* All inputs are assumed to be grid::grobs.
+* All functions have documentation.
+
 # funcgeo 0.2.1
 
 * Fixed everything so that the check-release action passes.
